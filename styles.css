@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: kumbh sans;
+}
+ .logo #bars{
+  height: 5vh;
+}
+.logo{
+    display: flex;
+}
+.cart-profile img{
+    height: 4vh;
+    padding-right: 15px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid ghostwhite;
+  width: 75vw;
+  position: relative;
+  top: 20px;
+  left: 150px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.logo-bar #logo{
+  height: 2.5vh;
+  padding-left: 20px;
+}
+.list ul li{
+  list-style: none;
+  color: #68707d;
+  display: inline;
+  padding-right: 15px;
+  position: relative;
+  right: 100px;
+  font-size: 0.8em;
+}
+.main{
+  margin-top: 100px;
+}
+.shoes{
+  line-height: 60px;
+  position: relative;
+  left: 155px;
+  top: 15.5%;
+}
+
+.shoes #product-1{
+ width: 36vw;
+ border-radius: 5px;
+}
+.thumbnail  img{
+  width: 13.4vh;
+  border-radius: 10px;
+  margin-right: 25px;
+  display:inline-flex;
+}
+#thumbnail-1 img{
+  cursor: pointer;
+  transition: 0.6s;
+}
+#thumbnail-1 :hover{
+  opacity: 0.4;
+  color: white;
+  border: 2px solid hsl(26, 100%, 55%) ;
+}
+.thumbnail img:hover{
+  opacity: 0.4;
+  color: white;
+  border: 2px solid orange ;
+}
+.main-2{
+  display: flex;
+}
+.shoe-text{
+  position: relative;
+  left: 200px;
+  top: 70px;
+}
+.shoe-text h3{
+  color: hsl(26, 100%, 55%);
+  font-size: 0.9em;
+}
+.shoe-text h1{
+  font-size: 2.5em;
+  font-weight: 800;
+}
+.shoe-text p{
+  font-size: 12px;
+  color: #68707d;
+  padding-top: 25px;
+  line-height: 20px;
+}
+
+#price ul{
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+ul h4{
+  font-weight: 900;
+  font-size: 1.5em;
+}
+#price li{
+  margin: 5px 10px;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  border-radius: 5px;
+  font-size: 0.7em;
+  height: 15px;
+}
+.add-cart{
+  display: flex;
+  margin-top: 60px;
+}
+.add-cart .add{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 90%);
+  width: 9vw;
+  height: 6vh;
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 10px;
+}
+.add-cart .cart{
+  display: inline-flex;
+  width: 15vw;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(26, 100%, 55%);
+  border: 1px solid hsl(26, 100%, 55%);
+  border-radius: 5px;
+  color: white;
+  box-shadow: hsl(25deg 100% 94%) 0px 20px 25px 3px;
+  height: 6vh;
+  margin-left: 15px;
+}
+
+
+/******media query*******/
+@media screen and (min-width: 1240px) {
+  .logo-bar #bars{
+    display: none;
+
+  }
+}
+@media screen and (max-width: 960px){
+    .list ul{
+      display: none;
+    }
+    .logo #bars{
+      height: 4vh;
+      display: contents;
+    }
+}
+
+@media screen and (max-width:768px){
+  .shoe-text h1{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container .main .shoe-text{
+    display: block;
+  }
+  .shoe-text .about-price{
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+  }
+  .thumbnail img{
+    width: 12vw;
+    margin-left: 20px;
+  }
+  .add-cart{
+    display: block;
+    right: 100px;
+  }
+}
+.shoe-text .add-cart {
+  position: relative;
+  top: 100px;
+}
+.add-cart .add {
+  
+}
+@media screen and (max-width:375px) {
+  .container{
+    display: block;
+  }
+  .shoes .thumbnail{
+    display: none;
+  }
+  .shoe-text .about-price{
+    display: none;
+  }
+  .shoes .product-1{
+    width: 35vh;
+  }
+  
+}
